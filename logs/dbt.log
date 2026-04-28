@@ -28,3 +28,19 @@ Happy modeling!
 [0m10:07:03.552182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7926edfdef80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7926ef73be80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7926ef762da0>]}
 [0m10:07:03.552684 [debug] [MainThread]: Flushing usage events
 [0m10:07:05.027127 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:22:37.659206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea1c4eaf100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea1c3c48220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea1c3c481c0>]}
+
+
+============================== 12:22:37.662473 | 4605e3d5-3051-447e-8237-5d568620f0b6 ==============================
+[0m12:22:37.662473 [info ] [MainThread]: Running with dbt=1.10.15
+[0m12:22:37.663011 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'static_parser': 'True', 'quiet': 'False', 'no_print': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'introspect': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run -s operational_data', 'warn_error': 'None', 'log_cache_events': 'False', 'use_colors': 'True', 'target_path': 'None', 'log_format': 'default', 'log_path': 'logs', 'write_json': 'True', 'profiles_dir': '/home/theo/.dbt', 'partial_parse': 'True', 'indirect_selection': 'eager'}
+[0m12:22:37.663455 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/theo/personal_portfolio/poke-api/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:22:37.664622 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.07556658, "process_in_blocks": "0", "process_kernel_time": 0.201901, "process_mem_max_rss": "97692", "process_out_blocks": "16", "process_user_time": 1.300246}
+[0m12:22:37.665108 [debug] [MainThread]: Command `dbt run` failed at 12:22:37.665021 after 0.08 seconds
+[0m12:22:37.665368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea1c4eaf100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea1c3c48550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ea1c3c48220>]}
+[0m12:22:37.665617 [debug] [MainThread]: Flushing usage events
+[0m12:22:39.108647 [debug] [MainThread]: An error was encountered while trying to flush usage events
