@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+requests
+jsonschema
+sqlalchemy
+psycopg2-binary

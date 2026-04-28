@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: poke_pg_dbt
+    schema: public
+    description: "Raw Table of Pokemon Ability"
+    
+    tables:
+      - name: pokemon_abilities
+        description: "pokemon ability"
+        columns:
+          - name: id
+            tests: [not_null, unique]
+          - name: raw_id
+            tests: [not_null]
+          - name: user_id
+            tests: [not_null] 
+          - name: pokemon_ability_id
+            tests: [not_null] 
+          - name: effect
+            tests: [not_null] 
+          - name: language
+            tests: [not_null] 
+          - name: short_effect
+            tests: [not_null] 
